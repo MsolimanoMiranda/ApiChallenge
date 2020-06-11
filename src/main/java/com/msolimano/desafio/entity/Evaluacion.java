@@ -41,6 +41,19 @@ public class Evaluacion implements Serializable{
 	private String apellidos;
 	
 	@JsonProperty
+	@NotBlank
+	private String correo;
+	
+	public String getCorreo() {
+		return correo;
+	}
+
+	public void setCorreo(String correo) {
+		this.correo = correo;
+	}
+
+
+	@JsonProperty
 	@Min(value = 1)
 	@Max(value = 10)
 	@NotNull
@@ -90,11 +103,12 @@ public class Evaluacion implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public Evaluacion(@NotBlank String nombres, @NotBlank String apellidos,
+	public Evaluacion(@NotBlank String nombres, @NotBlank String apellidos, @NotBlank String correo,
 			@Min(1) @Max(10) @NotNull Integer puntuacion, @Past @NotNull Date fecha_inscripcion) {
 		super();
 		this.nombres = nombres;
 		this.apellidos = apellidos;
+		this.correo = correo;
 		this.puntuacion = puntuacion;
 		this.fecha_inscripcion = fecha_inscripcion;
 	}
@@ -102,6 +116,8 @@ public class Evaluacion implements Serializable{
 	public Evaluacion() {
 	
 	}
+
+	
 	
 
 

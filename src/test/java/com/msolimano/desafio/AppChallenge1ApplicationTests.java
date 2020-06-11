@@ -33,7 +33,7 @@ class AppChallenge1ApplicationTests {
 	 public void saveEvaluacion() {
 	        Evaluacion evaluacion;
 			try {
-				evaluacion = new Evaluacion("Mark", "Heckler", 9, controller.ParseFecha("26-06-1995"));
+				evaluacion = new Evaluacion("Mark", "Heckler","msolimano_miranda@gmai.com", 9, controller.ParseFecha("26-06-1995"));
 				 repository.save(evaluacion);
 			        assertThat(evaluacion.getPuntuacion()).isNotNull();
 			} catch (ParseException e) {
