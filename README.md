@@ -17,7 +17,7 @@
 $ git clone https://github.com/MsolimanoMiranda/InterCorpBack.git
 $ cd docker-spring-boot
 $ mvn clean package
-$ java -jar target/spring-boot-web.jar
+$ java -jar target/AppChallenge-1-0.0.1-SNAPSHOT.jar
 access http://localhost:8080
 $ sudo docker build -t spring-boot:1.0 .
 $ sudo docker run -d -p 8080:8080 -t spring-boot:1.0
