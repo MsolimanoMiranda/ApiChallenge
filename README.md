@@ -7,22 +7,21 @@ Secreo un paquete para la documentacion con Swagger.
 
 
 Levantar el Servicio en docker :
-
-Ejecute en consola : git clone https://github.com/MsolimanoMiranda/InterCorpBack.git
-Ejecute en consola : cd docker-spring-boot
-Ejecute en consola : mvn clean package
-Ejecute en consola : java -jar target/spring-boot-web.jar
+```html
+$ git clone https://github.com/MsolimanoMiranda/InterCorpBack.git
+$ cd docker-spring-boot
+$ mvn clean package
+$ java -jar target/spring-boot-web.jar
 access http://localhost:8080
-Ejecute en consola : sudo docker build -t spring-boot:1.0 .
-Ejecute en consola : sudo docker run -d -p 8080:8080 -t spring-boot:1.0
-
+$ sudo docker build -t spring-boot:1.0 .
+$ sudo docker run -d -p 8080:8080 -t spring-boot:1.0
+```
 Ruta de Acceso http://localhost:8080
 
 
-
 Swagger: http://localhost:8080/swagger-ui.html#/
-
-
+Levantar el Servicio en docker :
+```html
 API Crear Evaluacion :
 Metodo: POST
 EndPoint: localhost:8080/api/create
@@ -52,5 +51,5 @@ Api Listar por Detalle de evaluacion
 Metodo: GET
 EndPoint:localhost:8080/detalle/listar?id=5ee22d94dec6d55216bd9c8b
 
-
+```
 
