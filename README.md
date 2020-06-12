@@ -20,8 +20,8 @@
 
 #Levantar el Servicio en docker :
 ```html
-$ git clone https://github.com/MsolimanoMiranda/InterCorpBack.git
-$ cd docker-spring-boot
+$ git clone https://github.com/MsolimanoMiranda/ApiChallenge.git
+$ cd ApiChallenge
 $ mvn clean package
 $ java -jar target/AppChallenge-1-0.0.1-SNAPSHOT.jar
 access http://localhost:8080
