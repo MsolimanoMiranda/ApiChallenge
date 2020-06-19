@@ -43,5 +43,24 @@ class AppChallenge1ApplicationTests {
 	       
 	       
 	    }
+	 
+	 @Test
+	 public void listarEvaluacionesFiltro() {
+	       
+			try {
+				repository.findByDateBetween(controller.ParseFecha("01-06-1995"), controller.ParseFecha("01-01-2020"));
+			} catch (ParseException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	        
+	    }
+	 
+	 @Test
+	 public void listarEvaluaciones() {
+	       
+			repository.listar();
+	        
+	    }
 }
 
